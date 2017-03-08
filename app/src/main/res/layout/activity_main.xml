@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    tools:context="com.example.mypc.hideshowimage24.MainActivity">
+    <RelativeLayout
+        android:background="#282828"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <LinearLayout
+            android:id="@+id/imgCntMain"
+            android:background="#282828"
+            android:layout_width="368dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/imgcnt"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@mipmap/ic_launcher"
+                />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@id/imgCntMain"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            >
+
+            <Button
+                android:id="@+id/btnHide"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Hide"
+                android:layout_marginLeft="130dp"
+
+                />
+
+            <Button
+                android:id="@+id/btnShow"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Show"
+                android:visibility="gone"
+                android:layout_marginLeft="130dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
